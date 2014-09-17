@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="42dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtUniversity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="36dp"
+        android:text="University" />
+
+    <TextView
+        android:id="@+id/txtFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUniversity"
+        android:layout_below="@+id/txtUniversity"
+        android:layout_marginTop="34dp"
+        android:text="Faculty" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtUniversity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtUniversity"
+        android:layout_alignLeft="@+id/edtName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtFaculty"
+        android:layout_alignLeft="@+id/edtUniversity"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSave3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edtFaculty"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="59dp"
+        android:text="Save" />
+
+</RelativeLayout>
